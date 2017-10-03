@@ -1,0 +1,5 @@
+package.json
+deployment.key.pub
+deployment.key.enc
+.gitignore
+.bookignore

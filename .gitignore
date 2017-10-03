@@ -1,0 +1,4 @@
+_tmp/
+_book/
+node_modules/
+deployment.key

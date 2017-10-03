@@ -1,0 +1,15 @@
+{
+  "name": "a11ybook",
+  "version": "0.1.0",
+  "description": "Here will be awesome content.",
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2"
+  },
+  "scripts": {
+    "postinstall": "gitbook install",
+    "start": "gitbook serve",
+    "build": "./build.sh"
+  },
+  "author": "",
+  "license": "ISC"
+}
