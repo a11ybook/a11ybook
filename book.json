@@ -1,4 +1,5 @@
 {
+	"gitbook": "3.2.2",
 	"title": "The Accessibility Book",
 	"language": "en",
 	"plugins": ["-sharing", "-fontsettings"]
