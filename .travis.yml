@@ -4,6 +4,8 @@ node_js:
 
 script: yarn build
 
+cache: yarn
+
 after_success:
   - openssl aes-256-cbc -K $encrypted_f123d460b42a_key -iv $encrypted_f123d460b42a_iv -in deployment.key.enc -out deployment.key -d
   - rsync -avz --delete -e 'ssh -i deployment.key' --chmod=u=rwX,g=rX _book/ timroes@rsync.keycdn.com:zones/a11ybook/
