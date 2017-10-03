@@ -4,9 +4,13 @@ node_js:
 sudo: required
 cache: yarn
 
+addons:
+  apt:
+    packages:
+      - calibre
+      - xvfb
+
 before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get install -y calibre xvfb
   - sudo ln -s ./ebook-convert-wrapper /usr/local/bin/ebook-convert
 
 script: yarn build
