@@ -1,10 +1,14 @@
 language: node_js
 node_js:
   - lts/*
+sudo: required
+cache: yarn
+
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y calibre
 
 script: yarn build
-
-cache: yarn
 
 after_success:
   - openssl aes-256-cbc -K $encrypted_f123d460b42a_key -iv $encrypted_f123d460b42a_iv -in deployment.key.enc -out deployment.key -d
