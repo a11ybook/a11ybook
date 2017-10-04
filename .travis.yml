@@ -9,6 +9,7 @@ addons:
     packages:
       - calibre
       - xvfb
+  ssh_known_hosts: rsync.keycdn.com
 
 before_install:
   - sudo ln -s "$TRAVIS_BUILD_DIR/ebook-convert-wrapper" /usr/local/bin/ebook-convert
