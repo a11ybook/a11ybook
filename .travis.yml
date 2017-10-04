@@ -11,7 +11,7 @@ addons:
       - xvfb
 
 before_install:
-  - sudo ln -s ./ebook-convert-wrapper /usr/local/bin/ebook-convert
+  - sudo ln -s "$TRAVIS_BUILD_DIR/ebook-convert-wrapper" /usr/local/bin/ebook-convert
   - which ebook-convert
   - echo $PATH
   - ls -la /usr/local/bin
