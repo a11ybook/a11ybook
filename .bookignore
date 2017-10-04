@@ -1,5 +1,9 @@
 package.json
 deployment.key.pub
 deployment.key.enc
+ebook-convert-wrapper
+build.sh
+yarn.lock
+.travis.yml
 .gitignore
 .bookignore
